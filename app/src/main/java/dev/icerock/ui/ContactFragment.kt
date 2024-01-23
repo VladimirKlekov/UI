@@ -1,8 +1,10 @@
 package dev.icerock.ui
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
 import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -10,13 +12,18 @@ import dev.icerock.ui.databinding.FragmentContactBinding
 import dev.icerock.viewmodel.ContactsViewModel
 
 class ContactFragment : Fragment(R.layout.fragment_contact) {
-    private lateinit var binding: FragmentContactBinding
+    private var _binding: FragmentContactBinding? = null
+    private val binding get() = _binding!!
     private val contactViewModel: ContactsViewModel by viewModels()
     private val args by navArgs<ContactFragmentArgs>()
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        binding = FragmentContactBinding.bind(view)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentContactBinding.inflate(inflater, container, false)
+        val view = binding.root
 
         contactViewModel.contactList.observe(viewLifecycleOwner) { element ->
             val contact = element.find { it.id == args.contactId } ?: run {
@@ -33,5 +40,11 @@ class ContactFragment : Fragment(R.layout.fragment_contact) {
         binding.container.backIv.setOnClickListener {
             findNavController().navigateUp()
         }
+        return view
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }
