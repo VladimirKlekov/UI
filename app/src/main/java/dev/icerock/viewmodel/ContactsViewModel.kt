@@ -12,6 +12,5 @@ class ContactsViewModel : ViewModel() {
 
     init {
         contactList.value = repository.saveContact()
-
     }
 }

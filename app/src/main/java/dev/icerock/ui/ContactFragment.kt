@@ -33,7 +33,5 @@ class ContactFragment : Fragment(R.layout.fragment_contact) {
         binding.container.backIv.setOnClickListener {
             findNavController().navigateUp()
         }
-
     }
-
 }

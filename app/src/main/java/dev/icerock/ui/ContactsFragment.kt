@@ -33,7 +33,5 @@ class ContactsFragment : Fragment(R.layout.fragment_contacts) {
         contactsViewModel.contactList.observe(viewLifecycleOwner) {
             adapter.submitList(it)
         }
-
-
     }
 }

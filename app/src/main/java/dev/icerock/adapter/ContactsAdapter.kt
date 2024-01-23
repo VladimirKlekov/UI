@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import dev.icerock.dto.Contact
 import dev.icerock.ui.databinding.ItemContactsBinding
 
-
 interface ContactListener {
     fun onContact(contact: Contact)
 }
@@ -28,7 +27,6 @@ class Adapter(private val listener: ContactListener) :
         val contact = getItem(position)
         holder.bind(contact)
     }
-
 }
 
 class ViewHolder(

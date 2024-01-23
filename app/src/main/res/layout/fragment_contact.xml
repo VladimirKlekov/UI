@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ContactFragment">
 
-
     <include
         android:id="@+id/container"
         layout="@layout/top_app_bar_for_contact"
