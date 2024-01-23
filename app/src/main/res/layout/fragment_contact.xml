@@ -18,7 +18,7 @@
     <ImageView
         android:id="@+id/avatar_iv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:layout_margin="@dimen/spacing_8dp"
         android:src="@drawable/avatar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,9 +31,10 @@
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="Имя"
+        android:padding="@dimen/spacing_8dp"
         android:textColor="@color/black"
         android:textSize="22sp"
-        android:layout_margin="@dimen/spacing_32dp"
+        android:layout_marginStart="@dimen/spacing_32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/avatar_iv"
         tools:text="Имя"/>
@@ -42,9 +43,9 @@
         android:id="@+id/first_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Алексей"
+        android:text=""
+        android:padding="@dimen/spacing_8dp"
         android:textSize="22sp"
-        android:layout_margin="@dimen/spacing_32dp"
         app:layout_constraintStart_toEndOf="@+id/name_textView"
         app:layout_constraintTop_toBottomOf="@id/avatar_iv"
         tools:text="Алексей" />
@@ -55,8 +56,9 @@
         android:layout_height="wrap_content"
         android:text="Фамилия"
         android:textColor="@color/black"
+        android:padding="@dimen/spacing_8dp"
         android:textSize="22sp"
-        android:layout_margin="@dimen/spacing_32dp"
+        android:layout_marginStart="@dimen/spacing_32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/name_textView"
         tools:text="Фамилия"/>
@@ -67,8 +69,9 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="22sp"
-        android:layout_margin="@dimen/spacing_32dp"
+        android:padding="@dimen/spacing_8dp"
         app:layout_constraintStart_toEndOf="@+id/last_name_textView"
         app:layout_constraintTop_toBottomOf="@id/name_textView"
         tools:text="Михайлов"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
