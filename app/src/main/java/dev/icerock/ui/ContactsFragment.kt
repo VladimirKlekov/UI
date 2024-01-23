@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import dev.icerock.adapter.Adapter
 import dev.icerock.adapter.ContactListener
 import dev.icerock.dto.Contact
@@ -20,7 +21,9 @@ class ContactsFragment : Fragment(R.layout.fragment_contacts) {
         val adapter = Adapter(
             object : ContactListener {
                 override fun onContact(contact: Contact) {
-                    TODO("Not yet implemented")
+                    val action =
+                        ContactsFragmentDirections.actionContactsFragmentToContactFragment(contact.id)
+                    findNavController().navigate(action)
                 }
             }
         )

@@ -40,6 +40,10 @@ class ViewHolder(
             firstNameTv.text = contact.firstName
             lastNameTv.text = contact.lastName
             avatarIv.setImageResource(contact.avatarResourceId)
+
+            binding.root.setOnClickListener {
+                listener.onContact(contact)
+            }
         }
     }
 }
