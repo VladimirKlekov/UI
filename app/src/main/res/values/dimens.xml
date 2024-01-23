@@ -2,4 +2,7 @@
 <resources>
     <dimen name="spacing_4dp">4dp</dimen>
     <dimen name="spacing_8dp">8dp</dimen>
+    <dimen name="spacing_16dp">16dp</dimen>
+    <dimen name="spacing_22dp">22dp</dimen>
+    <dimen name="spacing_60dp">60dp</dimen>
 </resources>

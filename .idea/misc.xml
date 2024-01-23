@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/Desktop/UI/app/src/main/res/layout/activity_app.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/Desktop/UI/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/User/Desktop/UI/app/src/main/res/layout/fragment_contacts.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/User/Desktop/UI/app/src/main/res/layout/item_contacts.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/Desktop/UI/app/src/main/res/layout/top_app_bar_for_contacts.xml" value="0.253125" />
       </map>
     </option>
