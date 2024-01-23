@@ -3,4 +3,6 @@
     <string name="app_name">UI</string>
     <string name="contacts">Контакты</string>
     <string name="avatar">Аватар</string>
+    <string name="second_option">Второй вариант</string>
+    <string name="first_option">Первый вариант</string>
 </resources>

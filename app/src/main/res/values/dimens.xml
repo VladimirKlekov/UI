@@ -7,4 +7,5 @@
     <dimen name="spacing_22dp">22dp</dimen>
     <dimen name="spacing_32dp">32dp</dimen>
     <dimen name="spacing_60dp">60dp</dimen>
+    <dimen name="spacing_200dp">200dp</dimen>
 </resources>

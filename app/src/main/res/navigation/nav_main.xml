@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_main"
-    app:startDestination="@id/contactsFragment">
+    app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/contactsFragment"
@@ -23,4 +23,20 @@
             android:name="contactId"
             app:argType="integer" />
     </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="dev.icerock.ui.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_secondContactsFragment"
+            app:destination="@id/secondContactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondContactsFragment"
+        android:name="dev.icerock.ui.SecondContactsFragment"
+        android:label="SecondContactsFragment" />
 </navigation>

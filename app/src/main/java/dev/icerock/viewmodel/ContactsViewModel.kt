@@ -13,4 +13,8 @@ class ContactsViewModel : ViewModel() {
     init {
         contactList.value = repository.saveContact()
     }
+
+    fun secondContact(): List<Contact> {
+        return repository.saveSecondContact()
+    }
 }
