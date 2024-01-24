@@ -12,7 +12,7 @@ class Repository {
         Contact(3, "Kot", "", R.drawable.avatar)
     )
 
-    fun saveSecondContact()= listOf(
+    fun saveSecondContact() = listOf(
         Contact(0, "Aleksey", "Mikhailov", R.drawable.avatar),
         Contact(1, "Vasya", "", R.drawable.avatar),
         Contact(2, "Petr", "", R.drawable.avatar),
