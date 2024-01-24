@@ -9,8 +9,9 @@ android {
 
     defaultConfig {
         applicationId = "dev.icerock.ui"
-        minSdk = 19
-        targetSdk = 32
+        minSdk = 24
+        //noinspection EditedTargetSdkVersion
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -35,6 +36,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    namespace = "dev.icerock.ui"
 }
 
 dependencies {
