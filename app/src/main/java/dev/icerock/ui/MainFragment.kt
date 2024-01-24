@@ -11,6 +11,7 @@ import dev.icerock.ui.databinding.FragmentMainBinding
 class MainFragment : Fragment(R.layout.fragment_main) {
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
+    val question: String = "Оба варианта работают. Который лучше использовать?"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,6 +28,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         binding.secondOptionBtn.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_secondContactsFragment)
         }
+
+        binding.question.text = question
 
         return view
     }

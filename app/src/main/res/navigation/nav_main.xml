@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_contactsFragment_to_contactFragment"
             app:destination="@id/contactFragment" />
+        <action
+            android:id="@+id/action_contactsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/contactFragment"
@@ -38,5 +41,23 @@
     <fragment
         android:id="@+id/secondContactsFragment"
         android:name="dev.icerock.ui.SecondContactsFragment"
-        android:label="SecondContactsFragment" />
+        android:label="SecondContactsFragment" >
+        <action
+            android:id="@+id/action_secondContactsFragment_to_secondContactFragment"
+            app:destination="@id/secondContactFragment" />
+        <action
+            android:id="@+id/action_secondContactsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondContactFragment"
+        android:name="dev.icerock.ui.SecondContactFragment"
+        android:label="SecondContactFragment" >
+        <argument
+            android:name="positionId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_secondContactFragment_to_secondContactsFragment"
+            app:destination="@id/secondContactsFragment" />
+    </fragment>
 </navigation>

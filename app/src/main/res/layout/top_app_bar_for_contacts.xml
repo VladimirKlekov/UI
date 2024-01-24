@@ -7,6 +7,19 @@
     android:layout_height="wrap_content"
     android:background="@color/purple_500">
 
+    <ImageView
+        android:id="@+id/back_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_8dp"
+        android:gravity="center"
+        android:padding="@dimen/spacing_8dp"
+        android:src="@drawable/ic_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
@@ -17,7 +30,7 @@
         android:textSize="22sp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/back_iv"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="RtlHardcoded" />
 </androidx.constraintlayout.widget.ConstraintLayout>
